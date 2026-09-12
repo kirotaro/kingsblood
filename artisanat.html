@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recettes, artisanat, raretés, bonus de travail et vente de crafts sur One Piece : Kings Blood.">
+  <title>Artisanat — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre VII · L’atelier</p><h1>La matière obéit à ceux qui apprennent son langage.</h1><p class="hero-lead">Consulte la recette, réunis les composants, vérifie ton rôle et ton XP, puis transforme l’inventaire. Le résultat est immédiat ; seul le bonus lié au travail attend le staff.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#recettes">Recettes</a></li><li><a href="#fabriquer">Fabriquer</a></li><li><a href="#raretes">Raretés</a></li><li><a href="#bonus">Bonus /work</a></li><li><a href="#vendre">Vendre</a></li></ul>
+
+      <section class="lead-grid" id="recettes" aria-labelledby="recettes-titre">
+        <article class="story-card"><p class="eyebrow">L’établi</p><h2 id="recettes-titre">Avant le marteau, la recette</h2><p>Le métal ne sait pas ce qu’il deviendra. Le bois ignore encore le navire. C’est la recette qui fait le lien entre les ressources d’hier et l’objet de demain — et l’expérience du métier qui décide si la main est prête.</p><p>Commence toujours par la liste : elle montre le résultat, la rareté, les ingrédients, la quantité produite et l’éventuel rôle requis.</p></article>
+        <aside class="poster-card"><p class="poster-label">Avant de craft</p><strong class="big">3 contrôles</strong><p>XP métier · rôle requis · place d’inventaire.</p></aside>
+      </section>
+      <div class="command"><code>/craft-list</code></div>
+      <div class="command"><code>/craft-list role:@RôleMétier</code></div>
+
+      <section class="section" id="fabriquer" aria-labelledby="fabriquer-titre">
+        <div class="section-heading"><span class="section-index">Transformation</span><h2 id="fabriquer-titre">Réaliser une recette</h2><p>Le champ <code class="inline">nombre</code> accepte une quantité ou le mot <code class="inline">max</code>. Le bot limite toujours la fabrication à ce que permettent les ingrédients et les places libres.</p></div>
+        <div class="command"><code>/craft item:Nom de la recette nombre:1</code></div>
+        <div class="command"><code>/craft item:Nom de la recette nombre:max</code></div>
+        <div class="flow"><div class="flow-step"><strong>Le métier est vérifié.</strong> Ton XP doit atteindre le minimum de la rareté.</div><div class="flow-step"><strong>Le rôle est vérifié.</strong> Seulement si la recette en exige un.</div><div class="flow-step"><strong>Le maximum est calculé.</strong> Ingrédients disponibles et capacité restante sont comparés.</div><div class="flow-step"><strong>La fabrication est immédiate.</strong> Les composants sont retirés et le résultat ajouté dans la même opération.</div></div>
+        <div class="note warning"><p>L’inventaire peut contenir au maximum <strong>200 unités</strong>, toutes piles confondues. Si le résultat ne tient pas, la fabrication ne démarre pas et les ingrédients ne sont pas consommés.</p></div>
+      </section>
+
+      <section class="section" id="raretes" aria-labelledby="raretes-titre">
+        <div class="section-heading"><span class="section-index">Difficulté</span><h2 id="raretes-titre">Les dix raretés et leurs seuils</h2><p>L’XP du métier ouvre progressivement l’accès aux ouvrages complexes.</p></div>
+        <div class="table-wrap"><table><thead><tr><th>Rareté</th><th>XP minimum</th><th>Multiplicateur de revente</th></tr></thead><tbody>
+          <tr><td>Mauvaise Qualité</td><td>0</td><td>×0,15</td></tr><tr><td>Commun</td><td>20</td><td>×1,00</td></tr><tr><td>Peu Commun</td><td>40</td><td>×1,05</td></tr><tr><td>Rare</td><td>60</td><td>×1,15</td></tr><tr><td>Très Rare</td><td>80</td><td>×1,20</td></tr><tr><td>Super Rare</td><td>100</td><td>×1,25</td></tr><tr><td>Épique</td><td>120</td><td>×1,30</td></tr><tr><td>Légendaire</td><td>140</td><td>×1,35</td></tr><tr><td>Mythique</td><td>160</td><td>×1,40</td></tr><tr><td>Secret</td><td>180</td><td>×1,50</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="section" id="bonus" aria-labelledby="bonus-titre">
+        <div class="section-heading"><span class="section-index">Lien avec le métier</span><h2 id="bonus-titre">Le bonus qui permet de travailler</h2><p>Pour chaque unité de recette fabriquée, le bot teste actuellement <strong>15 %</strong> de chance d’obtenir l’objet principal configuré pour <code class="inline">/work</code>.</p></div>
+        <div class="split"><article class="technical-card"><h3>Le craft principal</h3><p>Le résultat normal du craft est ajouté immédiatement et n’attend aucune validation.</p></article><article class="technical-card"><h3>L’objet bonus</h3><p>S’il tombe, une demande séparée est créée. L’objet n’entre dans l’inventaire qu’après acceptation du staff.</p></article></div>
+        <div class="technical-card"><h3>Exemple de fabrication multiple</h3><p>Tu fabriques 10 unités. Le bot réalise 10 tests indépendants à 15 %. Tu peux donc ne recevoir aucun bonus, en recevoir un, ou exceptionnellement plusieurs. Chaque bonus accepté peut ensuite alimenter une demande <code class="inline">/work</code>.</p></div>
+      </section>
+
+      <section class="section" id="vendre" aria-labelledby="vendre-titre">
+        <div class="section-heading"><span class="section-index">Commerce artisanal</span><h2 id="vendre-titre">Vendre une création</h2><p>Seuls les objets correspondant à une recette craftée passent par cette commande. La vente retire le résultat de l’inventaire et crédite immédiatement le portefeuille.</p></div>
+        <div class="command"><code>/sell-craft craft:Nom de la recette nombre:1</code></div>
+        <div class="command"><code>/sell-craft craft:Nom de la recette nombre:all</code></div>
+        <div class="technical-card"><h3>Formule</h3><p><strong>Prix unitaire = somme des prix valides des ingrédients × multiplicateur de rareté.</strong> Les ingrédients dont le prix est Infini ou invalide ne comptent pas dans la somme. Si aucun composant n’a de prix exploitable, le craft ne peut pas être vendu.</p></div>
+        <div class="note"><p>Cette vente n’a pas besoin de validation staff. Le calcul utilise la recette configurée, pas une estimation libre du joueur.</p></div>
+      </section>
+
+      <a class="next-chapter" href="economie.html"><span><small>Chapitre suivant</small><strong>Gérer Berries, boutique et inventaire</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>Consulte avant de fabriquer.</strong> Une recette relie métier, ressources, inventaire, travail et Berries.</p><p><a href="metiers.html">Retour au guide des métiers</a></p></div></footer>
+</div></body></html>

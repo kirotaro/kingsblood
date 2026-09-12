@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="XP par messages, rang et récompenses de niveaux sur One Piece : Kings Blood.">
+  <title>Niveaux — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre X · Le sillage</p><h1>Chaque message laisse une trace derrière le navire.</h1><p class="hero-lead">L’activité du serveur nourrit une progression de niveau, avec un délai anti-spam, des bonus de rédaction et quelques récompenses majeures jusqu’au niveau 50.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#xp">Gagner de l’XP</a></li><li><a href="#calcul">Calcul</a></li><li><a href="#difficulte">Difficulté</a></li><li><a href="#recompenses">Récompenses</a></li><li><a href="#rank">/rank</a></li></ul>
+
+      <section class="lead-grid" id="xp" aria-labelledby="xp-titre">
+        <article class="story-card"><p class="eyebrow">Le journal du voyage</p><h2 id="xp-titre">La constance plutôt que le vacarme</h2><p>Un équipage ne devient pas connu en criant cent fois la même phrase. Il grandit en parlant, en racontant, en bâtissant des scènes qui donnent au serveur une mémoire. Le système récompense cette présence avec une cadence volontairement limitée.</p><p>Un message éligible rapporte entre <strong>25 et 35 XP</strong>. Un même joueur ne peut recevoir ce gain qu’une fois toutes les <strong>30 secondes</strong>.</p></article>
+        <aside class="poster-card"><p class="poster-label">Niveau maximal</p><strong class="big">50</strong><p>Au niveau maximum, l’XP courante s’arrête et aucune récompense spéciale n’est prévue.</p></aside>
+      </section>
+
+      <section class="section" id="calcul" aria-labelledby="calcul-titre">
+        <div class="section-heading"><span class="section-index">Calcul d’un message</span><h2 id="calcul-titre">Base, longueur et boost</h2></div>
+        <div class="stat-grid three"><article class="stat-card"><strong class="value">25–35</strong><h3>XP de base</h3><p>Tirée aléatoirement pour chaque message admissible après le délai.</p></article><article class="stat-card"><strong class="value">×2</strong><h3>Message long</h3><p>À partir de 250 caractères dans le contenu du message.</p></article><article class="stat-card"><strong class="value">×1,5</strong><h3>Rôle Booster</h3><p>Appliqué si le membre possède le rôle booster configuré.</p></article></div>
+        <div class="technical-card"><h3>Les bonus se multiplient</h3><p>Un message de 250 caractères ou plus, envoyé par un booster, vaut <strong>XP de base ×2 ×1,5</strong>, puis le résultat est arrondi au supérieur. Par exemple : 31 XP de base deviennent 93 XP.</p></div>
+        <div class="note warning"><p>Les messages de bots, webhooks, messages privés et commandes utilisant le préfixe du bot ne gagnent pas d’XP. Répéter ou étirer artificiellement du texte reste contraire à l’esprit du système.</p></div>
+      </section>
+
+      <section class="section" id="difficulte" aria-labelledby="difficulte-titre">
+        <div class="section-heading"><span class="section-index">Courbe de niveau</span><h2 id="difficulte-titre">Chaque traversée demande 50 XP de plus</h2><p>Le coût du prochain niveau suit une règle simple : <strong>100 + (niveau actuel × 50)</strong>.</p></div>
+        <div class="table-wrap"><table><thead><tr><th>Passage</th><th>XP nécessaire</th><th>Lecture</th></tr></thead><tbody><tr><td>Niveau 0 → 1</td><td>100 XP</td><td>Premier palier</td></tr><tr><td>Niveau 1 → 2</td><td>150 XP</td><td>+50 par rapport au précédent</td></tr><tr><td>Niveau 5 → 6</td><td>350 XP</td><td>100 + 5 × 50</td></tr><tr><td>Niveau 10 → 11</td><td>600 XP</td><td>100 + 10 × 50</td></tr><tr><td>Niveau 25 → 26</td><td>1 350 XP</td><td>100 + 25 × 50</td></tr><tr><td>Niveau 49 → 50</td><td>2 550 XP</td><td>Dernier passage</td></tr></tbody></table></div>
+        <div class="note"><p>Si un gros gain dépasse le seuil, l’XP restante est conservée. Le bot peut franchir plusieurs niveaux d’un coup si le solde le permet.</p></div>
+      </section>
+
+      <section class="section" id="recompenses" aria-labelledby="recompenses-titre">
+        <div class="section-heading"><span class="section-index">Paliers marquants</span><h2 id="recompenses-titre">Les récompenses de niveau</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Niveau</th><th>Récompense</th><th>Remise</th></tr></thead><tbody>
+          <tr><td>5</td><td>+10 points de Statistiques Physiques à attribuer</td><td><span class="pill">Automatique</span></td></tr>
+          <tr><td>10</td><td>10 000 Berries + 20 points Physiques à attribuer</td><td><span class="pill">Automatique</span></td></tr>
+          <tr><td>20</td><td>1 fouille supplémentaire chaque jour</td><td><span class="pill">Automatique</span></td></tr>
+          <tr><td>30</td><td>2 × <code class="inline">!coffre-fdd</code></td><td>À remettre par le staff</td></tr>
+          <tr><td>45</td><td>1 × <code class="inline">!roll-arme</code></td><td>À remettre par le staff</td></tr>
+          <tr><td>50</td><td>Niveau maximum, aucune récompense</td><td>—</td></tr>
+        </tbody></table></div>
+        <div class="note success"><p>Les récompenses automatiques sont enregistrées comme traitées afin de ne pas être données deux fois. Les récompenses manuelles restent visibles dans la fiche jusqu’à leur remise.</p></div>
+      </section>
+
+      <section class="section" id="rank" aria-labelledby="rank-titre">
+        <div class="section-heading"><span class="section-index">Consulter le sillage</span><h2 id="rank-titre">La commande de rang</h2><p>Elle affiche le niveau, l’XP actuelle, l’objectif suivant, la dernière activité, les réserves d’attributs et les éventuelles récompenses manuelles.</p></div>
+        <div class="command"><code>/rank</code></div><div class="command"><code>/rank user:@Joueur</code></div>
+        <div class="note"><p>À chaque passage de niveau, le bot mentionne le joueur dans le salon d’annonce configuré et publie un embed avec le nouveau niveau, le gain du message et la récompense éventuelle.</p></div>
+      </section>
+
+      <a class="next-chapter" href="fruits.html"><span><small>Chapitre suivant</small><strong>Comprendre les Fruits du Démon</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>Le niveau récompense une présence régulière.</strong> Il ne remplace aucune progression de métier ou de Pouvoir.</p><p><a href="statistiques.html">Voir les réserves d’attributs</a></p></div></footer>
+</div></body></html>

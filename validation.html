@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fonctionnement des récompenses en attente et de la validation staff sur One Piece : Kings Blood.">
+  <title>Validation staff — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre XII · Le sceau</p><h1>Le hasard propose. Le staff confirme.</h1><p class="hero-lead">Pour les récompenses sensibles, le bot enregistre d’abord une demande identifiable. Aucun point, objet ou Berry concerné n’est appliqué avant la décision.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#pourquoi">Pourquoi</a></li><li><a href="#attente">Cycle</a></li><li><a href="#concerne">Commandes concernées</a></li><li><a href="#immediat">Gains immédiats</a></li><li><a href="#expiration">Expiration</a></li></ul>
+
+      <section class="lead-grid" id="pourquoi" aria-labelledby="pourquoi-titre">
+        <article class="story-card"><p class="eyebrow">Le bureau du port</p><h2 id="pourquoi-titre">Une récompense sous scellé</h2><p>Le coffre avait été trouvé, mais son sceau n’était pas encore rompu. Un officier compara le récit, l’heure et le contenu annoncé. Puis seulement il hocha la tête. Le gain entra dans les comptes sans qu’aucune main puisse le prendre deux fois.</p><p>Cette étape protège la cohérence RP, évite les doubles récompenses et laisse au staff une décision simple : <strong>Oui — Accepter</strong> ou <strong>Non — Refuser</strong>.</p></article>
+        <aside class="poster-card"><p class="poster-label">Durée des boutons</p><strong class="big">24 heures</strong><p>L’expiration retire le panneau actif, pas la demande enregistrée.</p></aside>
+      </section>
+
+      <section class="section" id="attente" aria-labelledby="attente-titre">
+        <div class="section-heading"><span class="section-index">Cycle complet</span><h2 id="attente-titre">Ce qui se passe après ta commande</h2></div>
+        <div class="flow"><div class="flow-step"><strong>Une demande unique est créée.</strong> Elle reçoit un identifiant du type <code class="inline">R-…</code> et contient sa source, ses gains et ses coûts éventuels.</div><div class="flow-step"><strong>Le panneau part au salon staff.</strong> La récompense reste au statut « En attente ».</div><div class="flow-step"><strong>Un administrateur choisit.</strong> Le bouton est réservé au staff et ne fonctionne plus après 24 heures.</div><div class="flow-step"><strong>Le bot revalide les conditions.</strong> Place libre, objet à consommer, niveau maximum ou rôle de Pouvoir sont contrôlés avant toute écriture.</div><div class="flow-step"><strong>La décision devient définitive.</strong> Une acceptation applique le contenu une fois ; un refus ferme la demande.</div></div>
+        <div class="note success"><p><strong>Protection anti-doublon :</strong> chaque sous-système conserve la trace de l’identifiant appliqué. Même après un clic répété ou un redémarrage, la même récompense ne doit pas être créditée deux fois.</p></div>
+      </section>
+
+      <section class="section" id="concerne" aria-labelledby="concerne-titre">
+        <div class="section-heading"><span class="section-index">Sous validation</span><h2 id="concerne-titre">Les récompenses qui attendent le staff</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Source</th><th>Ce qui attend</th><th>Contrôle particulier</th></tr></thead><tbody>
+          <tr><td><code class="inline">/train-physique</code></td><td>Points de réserve Physique</td><td>Une demande de cette famille à la fois.</td></tr>
+          <tr><td><code class="inline">/train-capacité</code></td><td>Points de réserve Mentale</td><td>Une demande de cette famille à la fois.</td></tr>
+          <tr><td><code class="inline">/train-power</code></td><td>Progression directe Style / Fruit / Haki</td><td>Le rôle ciblé est revérifié à l’acceptation.</td></tr>
+          <tr><td><code class="inline">/fouille</code></td><td>Objet(s) et Berries tirés</td><td>La place d’inventaire est vérifiée.</td></tr>
+          <tr><td><code class="inline">/fouille-archéologique</code></td><td>Vestige ou trésor trouvé</td><td>La place d’inventaire est vérifiée.</td></tr>
+          <tr><td>Bonus de <code class="inline">/craft</code></td><td>Objet principal servant à <code class="inline">/work</code></td><td>Le résultat normal du craft, lui, est déjà immédiat.</td></tr>
+          <tr><td><code class="inline">/work</code></td><td>+1 XP métier</td><td>1 objet principal est consommé uniquement si accepté.</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="section" id="immediat" aria-labelledby="immediat-titre">
+        <div class="section-heading"><span class="section-index">Sans validation</span><h2 id="immediat-titre">Ce qui est appliqué immédiatement</h2><p>Ces actions possèdent leurs propres contrôles mais ne créent pas une demande staff.</p></div>
+        <div class="card-grid three"><article class="stat-card"><h3>Départ</h3><p>Bonus de classe, de trait et objets du pack.</p></article><article class="stat-card"><h3>Pêche</h3><p>Poisson ajouté, puis éventuelle casse de la canne.</p></article><article class="stat-card"><h3>Boutique</h3><p>Achat si argent et place sont suffisants.</p></article><article class="stat-card"><h3>Craft normal</h3><p>Ingrédients consommés et résultat ajouté ; bonus séparé.</p></article><article class="stat-card"><h3>Vente de craft</h3><p>Objet retiré et Berries créditées.</p></article><article class="stat-card"><h3>Niveaux 5, 10 et 20</h3><p>Récompenses automatiques et protégées contre les doublons.</p></article><article class="stat-card"><h3>Attribution de stats</h3><p>Réserve dépensée et statistique augmentée avec calcul racial.</p></article><article class="stat-card"><h3>Jeter un objet</h3><p>Retrait volontaire immédiat et sans remboursement.</p></article></div>
+      </section>
+
+      <section class="section" id="expiration" aria-labelledby="expiration-titre">
+        <div class="section-heading"><span class="section-index">Boutons expirés</span><h2 id="expiration-titre">La demande est encore récupérable</h2><p>Après 24 heures, les anciens boutons refusent la décision. Le joueur doit prévenir le staff, qui peut afficher toutes ses récompenses encore en attente et générer de nouveaux boutons.</p></div>
+        <div class="command"><code>/recompense_gestion user:@Joueur</code></div>
+        <div class="note warning"><p>Cette commande est réservée au staff. Pour le joueur, la bonne action est simplement de transmettre son identifiant de récompense ou de demander la vérification de ses demandes en attente.</p></div>
+        <div class="split"><article class="technical-card"><h3>Condition devenue invalide</h3><p>Inventaire plein, objet de travail disparu, métier à 200 ou rôle de Pouvoir absent : l’acceptation échoue sans supprimer la demande. Corrige la condition puis fais réessayer le staff.</p></article><article class="technical-card"><h3>Notification</h3><p>Après une décision réussie, le bot tente d’envoyer un message privé au joueur. Si les messages privés sont fermés, la décision reste tout de même enregistrée.</p></article></div>
+        <div class="note"><p>Pour les commandes avec cooldown, le délai commence généralement lors de la création de la demande. Le refus ou l’expiration des boutons ne remonte pas automatiquement le temps.</p></div>
+      </section>
+
+      <a class="next-chapter" href="commandes.html"><span><small>Dernière escale</small><strong>Trouver la bonne commande</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>En attente signifie : rien n’est encore gagné.</strong> Conserve l’identifiant jusqu’à la décision.</p><p><a href="commandes.html">Index des commandes joueurs</a></p></div></footer>
+</div></body></html>

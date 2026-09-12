@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Index guidé des commandes joueurs et de leurs prérequis sur One Piece : Kings Blood.">
+  <title>Commandes utiles — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Index du navigateur</p><h1>La bonne commande commence par la bonne préparation.</h1><p class="hero-lead">Trouve l’action, vérifie la colonne « avant », puis laisse l’autocomplétion Discord choisir les valeurs exactes. Chaque ligne mène au chapitre complet.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#premiers-pas">Premiers pas</a></li><li><a href="#progression">Progression</a></li><li><a href="#exploration">Exploration</a></li><li><a href="#metier">Métier &amp; craft</a></li><li><a href="#economie">Économie</a></li><li><a href="#social">Monde &amp; aide</a></li></ul>
+
+      <section class="lead-grid" id="premiers-pas" aria-labelledby="premiers-pas-titre">
+        <article class="story-card"><p class="eyebrow">Carte rapide</p><h2 id="premiers-pas-titre">Si tu viens d’arriver</h2><p>Commence dans le salon de départ, choisis ton identité, écris ta faiblesse puis ouvre ton profil. Tu peux ensuite lire tes statistiques, lancer chaque famille d’entraînement et explorer le reste du serveur.</p><div class="flow"><div class="flow-step"><strong><code class="inline">/start</code></strong> — classe puis trait.</div><div class="flow-step"><strong><code class="inline">/faiblesse</code></strong> — ajoute le point vulnérable joué en RP.</div><div class="flow-step"><strong><code class="inline">/profile</code></strong> — vérifie ton identité complète.</div><div class="flow-step"><strong><code class="inline">/stats</code></strong> — découvre tes trois pages de progression.</div></div></article>
+        <aside class="poster-card"><p class="poster-label">Dans Discord</p><strong class="big">/help</strong><p>Le bot possède aussi un guide paginé. Pour une fiche précise : <code class="inline">/help-commande</code>.</p></aside>
+      </section>
+
+      <section class="section" aria-labelledby="personnage-commandes">
+        <div class="section-heading"><span class="section-index">Identité</span><h2 id="personnage-commandes">Personnage</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/start</code></td><td>Être dans le salon Start et ne pas avoir de profil.</td><td>Sélecteurs de classe et trait, puis écran de faiblesse.</td></tr>
+          <tr><td><code class="inline">/faiblesse action:Ajouter nom:Vertige</code></td><td>Avoir terminé <code class="inline">/start</code>.</td><td>Ajoute ou remplace la faiblesse RP.</td></tr>
+          <tr><td><code class="inline">/faiblesse action:Reset reset:Oui</code></td><td>Avoir un profil.</td><td>Efface la faiblesse actuelle.</td></tr>
+          <tr><td><code class="inline">/profile</code></td><td>Avoir terminé <code class="inline">/start</code>.</td><td>Affiche ton résumé ; <code class="inline">user:</code> permet de consulter quelqu’un.</td></tr>
+        </tbody></table></div>
+        <p><a class="button" href="personnage.html">Lire le chapitre Personnage</a></p>
+      </section>
+
+      <section class="section" id="progression" aria-labelledby="progression-titre">
+        <div class="section-heading"><span class="section-index">Stats &amp; niveaux</span><h2 id="progression-titre">Progresser</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/stats</code></td><td>Avoir un profil ; recommandé après un entraînement validé.</td><td>Trois pages et panneau d’attribution Physique/Mental.</td></tr>
+          <tr><td><code class="inline">/stats-attribuer statistique:Force nombre:10</code></td><td>Avoir une réserve suffisante obtenue par entraînement ou niveau.</td><td>Dépense la réserve avec modificateur racial.</td></tr>
+          <tr><td><code class="inline">/train-physique</code></td><td>Avoir terminé <code class="inline">/start</code> et ne pas être sous le cooldown de 12 h.</td><td>Demande 15 points de réserve Physique.</td></tr>
+          <tr><td><code class="inline">/train-capacité</code></td><td>Avoir terminé <code class="inline">/start</code> et ne pas être sous le cooldown de 12 h.</td><td>Demande 15 points de réserve Mentale.</td></tr>
+          <tr><td><code class="inline">/train-power capacité:Style de Combat</code></td><td>Posséder un véritable rôle de style ; cooldown Pouvoir disponible.</td><td>Demande 15 points directs sur le style.</td></tr>
+          <tr><td><code class="inline">/train-power capacité:Fruit du Démon</code></td><td>Posséder le rôle Fruit ou un rôle de stade.</td><td>Demande 15 points directs sur le Fruit.</td></tr>
+          <tr><td><code class="inline">/train-power capacité:Haki haki:Haki de l’Armement</code></td><td>Posséder la branche de Haki sélectionnée.</td><td>Demande 15 points directs sur cette branche.</td></tr>
+          <tr><td><code class="inline">/rank</code></td><td>Aucun prérequis ; parler normalement fait progresser l’XP.</td><td>Affiche niveau, XP, réserves et récompenses manuelles.</td></tr>
+        </tbody></table></div>
+        <div class="split"><p><a class="button" href="statistiques.html">Comprendre les statistiques</a></p><p><a class="button" href="entrainements.html">Voir les entraînements</a></p></div>
+      </section>
+
+      <section class="section" id="exploration" aria-labelledby="exploration-titre">
+        <div class="section-heading"><span class="section-index">Exploration</span><h2 id="exploration-titre">Fouiller et pêcher</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/fouille</code></td><td>Objets fouillables configurés ; aucune demande identique en attente ; délai de 6 h disponible.</td><td>Propose objet(s) et Berries au staff.</td></tr>
+          <tr><td><code class="inline">/fouille-archéologique</code></td><td>Rôle Archéologue, une place libre, aucune demande en attente, délai de 6 h.</td><td>Propose un vestige au staff.</td></tr>
+          <tr><td><code class="inline">/pêche canne:Canne à Pêche en Bois</code></td><td>Posséder la canne choisie, une place libre et attendre 10 min entre deux lancers.</td><td>Ajoute immédiatement une prise ou déclenche un Monstre Marin.</td></tr>
+        </tbody></table></div>
+        <div class="split"><p><a class="button" href="fouilles.html">Guide des fouilles</a></p><p><a class="button" href="peche.html">Guide de la pêche</a></p></div>
+      </section>
+
+      <section class="section" id="metier" aria-labelledby="metier-titre">
+        <div class="section-heading"><span class="section-index">Métier &amp; artisanat</span><h2 id="metier-titre">Fabriquer et gagner de l’XP métier</h2><p>Le chemin important est : liste → craft → bonus validé → work validé.</p></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/métier</code></td><td>Posséder un rôle Discord de métier pour une fiche complète.</td><td>Affiche métier, XP sur 200 et compétences.</td></tr>
+          <tr><td><code class="inline">/craft-list</code></td><td>Des recettes doivent avoir été configurées ; <code class="inline">role:</code> est facultatif.</td><td>Affiche ingrédients, rareté, résultat et contraintes.</td></tr>
+          <tr><td><code class="inline">/craft item:Barque nombre:1</code></td><td>XP métier, rôle éventuel, ingrédients et place suffisants.</td><td>Transforme immédiatement les ingrédients.</td></tr>
+          <tr><td><code class="inline">/craft item:Barque nombre:max</code></td><td>Mêmes prérequis.</td><td>Fabrique le maximum possible.</td></tr>
+          <tr><td><code class="inline">/work</code></td><td>Posséder l’objet principal obtenu comme bonus de craft après sa validation.</td><td>Demande de consommer 1 objet contre +1 XP métier.</td></tr>
+          <tr><td><code class="inline">/sell-craft craft:Barque nombre:all</code></td><td>Avoir fabriqué et posséder le résultat de cette recette.</td><td>Vend immédiatement selon la rareté.</td></tr>
+        </tbody></table></div>
+        <div class="split"><p><a class="button" href="metiers.html">Guide des métiers</a></p><p><a class="button" href="artisanat.html">Guide de l’artisanat</a></p></div>
+      </section>
+
+      <section class="section" id="economie" aria-labelledby="economie-titre">
+        <div class="section-heading"><span class="section-index">Berries &amp; inventaire</span><h2 id="economie-titre">Acheter et gérer son sac</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/balance</code></td><td>Aucun.</td><td>Affiche les Berries ; <code class="inline">user:</code> est facultatif.</td></tr>
+          <tr><td><code class="inline">/inventaire</code></td><td>Aucun.</td><td>Affiche objets et capacité ; <code class="inline">user:</code> est facultatif.</td></tr>
+          <tr><td><code class="inline">/shop categorie:Soins</code></td><td>Le catalogue doit contenir des objets.</td><td>Affiche une catégorie paginée.</td></tr>
+          <tr><td><code class="inline">/shop-buy item:Bandage quantite:5</code></td><td>Consulter le shop, avoir les Berries et 5 places.</td><td>Achète immédiatement si le prix n’est pas Infini.</td></tr>
+          <tr><td><code class="inline">/item-trash item:Bandage nombre:all</code></td><td>Vérifier le nom et la quantité dans l’inventaire.</td><td>Jette immédiatement, sans remboursement.</td></tr>
+        </tbody></table></div>
+        <p><a class="button" href="economie.html">Guide de l’économie</a></p>
+      </section>
+
+      <section class="section" id="social" aria-labelledby="social-titre">
+        <div class="section-heading"><span class="section-index">Monde &amp; assistance</span><h2 id="social-titre">Réputation et aide intégrée</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>Commande</th><th>Avant de l’utiliser</th><th>Résultat</th></tr></thead><tbody>
+          <tr><td><code class="inline">/rep_show user:@Joueur</code></td><td>Indiquer obligatoirement un membre.</td><td>Affiche les dix factions, scores et titres.</td></tr>
+          <tr><td><code class="inline">/info-reputation</code></td><td>Aucun.</td><td>Affiche tous les paliers de −100 à +100.</td></tr>
+          <tr><td><code class="inline">/help</code></td><td>Aucun.</td><td>Ouvre le manuel Discord paginé par famille.</td></tr>
+          <tr><td><code class="inline">/help-commande command:pêche</code></td><td>Choisir le nom via l’autocomplétion.</td><td>Affiche description, prérequis, syntaxe et exemple.</td></tr>
+        </tbody></table></div>
+        <div class="note"><p>Les commandes de gestion des Fruits, objets, compétences, réputation et récompenses sont réservées au staff. Ce guide explique leur effet sur le joueur sans devenir un manuel administratif complet.</p></div>
+      </section>
+
+      <section class="section" aria-labelledby="diagnostic">
+        <div class="section-heading"><span class="section-index">Quand ça ne marche pas</span><h2 id="diagnostic">Les cinq vérifications rapides</h2></div>
+        <ol class="check-list"><li>As-tu créé ton personnage avec <code class="inline">/start</code> ?</li><li>Possèdes-tu le bon rôle Discord — race, métier, style, Fruit ou Haki ?</li><li>As-tu l’objet, les Berries ou les places d’inventaire requis ?</li><li>Une récompense identique est-elle déjà en attente ou un cooldown actif ?</li><li>As-tu sélectionné les options avec l’autocomplétion plutôt que tapé une valeur approximative ?</li></ol>
+        <div class="note warning"><p>Si une validation a plus de 24 heures, communique son identifiant au staff. Il utilisera <code class="inline">/recompense_gestion user:</code> pour recréer les boutons.</p></div>
+      </section>
+
+      <a class="next-chapter" href="index.html"><span><small>Retour au port</small><strong>Revenir à l’accueil du guide</strong></span><span aria-hidden="true">⌂</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>Conseil :</strong> laisse Discord compléter les noms d’items, de recettes et de choix pour éviter les erreurs.</p><p><a href="validation.html">Comprendre les demandes en attente</a></p></div></footer>
+</div></body></html>

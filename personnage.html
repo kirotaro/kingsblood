@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Créer son personnage sur One Piece : Kings Blood : classe, trait, faiblesse et profil.">
+  <title>Personnage — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="site-shell">
+    <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+    <div class="layout">
+      <nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav>
+      <main class="page" id="contenu">
+        <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre I · L’identité</p><h1>Avant la légende, il y a un choix.</h1><p class="hero-lead">Une classe décrit ta manière d’agir, un trait révèle ton tempérament et une faiblesse donne au récit l’endroit précis où ton héros peut vaciller.</p></div></section>
+        <div class="paper-zone"><div class="content">
+          <ul class="mini-toc" aria-label="Sommaire de la page"><li><a href="#depart">Le départ</a></li><li><a href="#classes">Classes</a></li><li><a href="#traits">Traits</a></li><li><a href="#faiblesse">Faiblesse</a></li><li><a href="#profil">Profil</a></li></ul>
+
+          <section class="lead-grid" id="depart" aria-labelledby="depart-titre">
+            <article class="story-card"><p class="eyebrow">Récit de bord</p><h2 id="depart-titre">Trois réponses devant l’horizon</h2><p>Le recruteur posa trois cartes sur la table. Sur la première : <em>comment te bats-tu ?</em> Sur la deuxième : <em>qui es-tu lorsque personne ne te regarde ?</em> Sur la troisième, encore vierge : <em>qu’est-ce qui peut te faire perdre pied ?</em></p><p>Ton départ naît de ces trois réponses : <strong>une classe + un trait + une faiblesse</strong>. Elles ne servent pas seulement à obtenir des bonus ; elles deviennent des engagements de jeu.</p></article>
+            <aside class="poster-card"><p class="poster-label">Exemple de fiche</p><strong class="big">Tireur</strong><p><strong>Trait :</strong> Crocheteur<br><strong>Faiblesse :</strong> les femmes très séduisantes</p></aside>
+          </section>
+
+          <section class="section" aria-labelledby="demarrage">
+            <div class="section-heading"><span class="section-index">Procédure technique</span><h2 id="demarrage">Créer son personnage</h2><p>La commande se lance dans le salon réservé au départ. Le bot guide ensuite le joueur avec deux sélecteurs, puis explique comment écrire sa faiblesse.</p></div>
+            <div class="command"><code>/start</code></div>
+            <div class="flow"><div class="flow-step"><strong>Choisis une classe.</strong> Le premier menu présente chaque voie et son avantage en une ligne.</div><div class="flow-step"><strong>Choisis un trait.</strong> Le second menu applique les bonus simples ou ouvre les choix nécessaires.</div><div class="flow-step"><strong>Écris ta faiblesse.</strong> Utilise ensuite la commande dédiée pour terminer ton identité.</div><div class="flow-step"><strong>Consulte ton profil.</strong> Vérifie classe, trait, faiblesse, bonus et progression dans une seule fiche.</div></div>
+            <div class="note warning"><p><strong>Un seul départ par personnage.</strong> Une fois le profil créé, le joueur ne peut pas relancer librement <code class="inline">/start</code>. Une remise à zéro éventuelle relève du staff.</p></div>
+          </section>
+
+          <section class="section" id="classes" aria-labelledby="classes-titre">
+            <div class="section-heading"><span class="section-index">Premier choix</span><h2 id="classes-titre">La classe : ta première manière d’affronter le monde</h2><p>La classe est un point de départ, pas une prison. Elle donne un avantage initial et une couleur de jeu ; elle ne garantit jamais la victoire en scène.</p></div>
+            <div class="table-wrap"><table><thead><tr><th>Classe</th><th>Avantage de départ</th><th>Lecture RP</th></tr></thead><tbody>
+              <tr><td><strong>Tireur</strong></td><td>1 × <code class="inline">[🧧] - Lance Pierre</code></td><td>Précision, distance et recherche d’angles utiles.</td></tr>
+              <tr><td><strong>Cogneur</strong></td><td>+10 en Force</td><td>Le corps devient le premier outil de confrontation.</td></tr>
+              <tr><td><strong>Sabreur</strong></td><td>1 × <code class="inline">[🧧] - Lame Basique</code></td><td>Discipline de la lame et technique martiale.</td></tr>
+              <tr><td><strong>Gladiateur</strong></td><td>+10 en Style de Combat</td><td>Une avance dans la maîtrise d’un art de combat possédé.</td></tr>
+              <tr><td><strong>Par Défaut</strong></td><td>Aucun bonus particulier</td><td>Pour un personnage qui ne correspond encore à aucune voie.</td></tr>
+            </tbody></table></div>
+            <div class="note"><p><strong>Objets du pack.</strong> Si la Lance Pierre ou la Lame Basique n’existe pas encore dans la boutique, le bot crée automatiquement sa fiche technique comme objet non fouillable et non achetable, puis la place dans l’inventaire du joueur.</p></div>
+          </section>
+
+          <section class="section" id="traits" aria-labelledby="traits-titre">
+            <div class="section-heading"><span class="section-index">Deuxième choix</span><h2 id="traits-titre">Le trait : ce qui revient dans chacune de tes scènes</h2><p>Le bonus traduit une tendance forte du personnage. Pour le conserver cohérent, le comportement correspondant doit réellement apparaître en RP.</p></div>
+            <div class="table-wrap"><table><thead><tr><th>Trait</th><th>Effet</th><th>Engagement RP</th></tr></thead><tbody>
+              <tr><td>Sportif</td><td>+10 dans une statistique Physique choisie</td><td>Nommer et pratiquer un sport cohérent.</td></tr>
+              <tr><td>Éloquent</td><td>+10 Crédibilité</td><td>Construire ses discours, même sous pression.</td></tr>
+              <tr><td>Sang Froid</td><td>+5 Résistance Mentale</td><td>Rester lucide face au danger.</td></tr>
+              <tr><td>Sang Chaud</td><td>+5 Force Mentale</td><td>Agir avec intensité, parfois avant de réfléchir.</td></tr>
+              <tr><td>Stoïque</td><td>+10 Résistance et tolérance RP à la douleur</td><td>Supporter sans nier les blessures ni leurs conséquences.</td></tr>
+              <tr><td>Froussard</td><td>−5 Force Mentale, −5 Résistance Mentale ; entraînements ×1,15 pendant 168 h</td><td>Faire exister la peur et les stratégies d’évitement.</td></tr>
+              <tr><td>Pessimiste</td><td>−10 Force Mentale ; +15 Résistance Mentale</td><td>Prévoir l’échec tout en étant préparé à l’endurer.</td></tr>
+              <tr><td>Doux/ce</td><td>+10 Crédibilité</td><td>Privilégier l’écoute et l’apaisement.</td></tr>
+              <tr><td>Normal</td><td>+5 dans une statistique et −5 dans une autre, différentes</td><td>Un profil équilibré façonné par deux choix.</td></tr>
+              <tr><td>Crocheteur</td><td>+5 Perception</td><td>Serrures simples avec matériel adapté ; mécanismes complexes en scène.</td></tr>
+              <tr><td>Observateur</td><td>+10 Perception</td><td>Prendre le temps de regarder avant d’intervenir.</td></tr>
+              <tr><td>Endurci</td><td>+5 Résistance ; +5 Résistance Mentale</td><td>Montrer une expérience qui a forgé le corps et l’esprit.</td></tr>
+              <tr><td>Rusé</td><td>+5 Perception ; +5 Crédibilité</td><td>Employer détours, lecture des autres et plans crédibles.</td></tr>
+            </tbody></table></div>
+            <div class="note success"><p>Les bonus sans choix sont appliqués automatiquement. Pour <strong>Sportif</strong> et <strong>Normal</strong>, le bot demande les statistiques concernées avant de finaliser le départ.</p></div>
+          </section>
+
+          <section class="section" id="faiblesse" aria-labelledby="faiblesse-titre">
+            <div class="section-heading"><span class="section-index">Troisième choix</span><h2 id="faiblesse-titre">La faiblesse : l’endroit où naît le vrai suspense</h2><p>Elle est écrite librement par le joueur. Choisis quelque chose de jouable, compréhensible et suffisamment précis pour créer des situations sans bloquer toutes les scènes.</p></div>
+            <div class="split"><article class="technical-card"><h3>Ajouter</h3><div class="command"><code>/faiblesse action:Ajouter nom:Vertige</code></div><p>Exemples : peur du feu, avidité, vertige, incapacité à résister aux beaux visages, phobie des profondeurs.</p></article><article class="technical-card"><h3>Réinitialiser</h3><div class="command"><code>/faiblesse action:Reset reset:Oui</code></div><p>Le reset efface la faiblesse actuelle. Écris ensuite la nouvelle version avec l’action <strong>Ajouter</strong>.</p></article></div>
+            <blockquote class="quote">Une faiblesse ne retire pas l’héroïsme. Elle lui donne quelque chose à vaincre — ou une raison magnifique d’échouer.</blockquote>
+          </section>
+
+          <section class="section" id="profil" aria-labelledby="profil-titre">
+            <div class="section-heading"><span class="section-index">Carnet d’identité</span><h2 id="profil-titre">Retrouver l’essentiel avec le profil</h2><p>Le profil réunit le petit résumé du personnage : classe, trait, faiblesse et informations de progression utiles.</p></div>
+            <div class="command"><code>/profile</code></div>
+            <ul class="check-list"><li>Vérifie que le trait choisi correspond à ce que tu joues.</li><li>Donne à ta faiblesse des occasions réelles d’apparaître.</li><li>Considère les bonus comme des repères de cohérence, pas comme une permission d’imposer une issue.</li></ul>
+          </section>
+
+          <a class="next-chapter" href="statistiques.html"><span><small>Chapitre suivant</small><strong>Comprendre les statistiques</strong></span><span aria-hidden="true">→</span></a>
+        </div></div>
+      </main>
+    </div>
+    <footer class="page-footer"><div class="footer-inner"><p><strong>One Piece : Kings Blood</strong> — classe, trait et faiblesse doivent rester visibles dans le jeu.</p><p><a href="commandes.html">Index des commandes</a></p></div></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fouille de base et fouille archéologique sur One Piece : Kings Blood.">
+  <title>Fouilles — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre IV · Les traces</p><h1>Le sable cache ce que les cartes ont oublié.</h1><p class="hero-lead">La fouille ordinaire suit l’instinct. L’archéologie suit les signes. Toutes deux créent un résultat en attente, que le staff doit confirmer avant le gain.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#base">Fouille de base</a></li><li><a href="#gains">Berries</a></li><li><a href="#bonus">Fouille bonus</a></li><li><a href="#archeologie">Archéologie</a></li><li><a href="#attente">Validation</a></li></ul>
+
+      <section class="lead-grid" id="base" aria-labelledby="base-titre">
+        <article class="story-card"><p class="eyebrow">À marée basse</p><h2 id="base-titre">Une lueur sous les débris</h2><p>Entre deux planches noircies, une pièce accrocha le soleil. Plus loin, la boue conservait la forme d’un objet que personne n’avait encore réclamé. Fouiller, ce n’est pas demander au monde un trésor précis : c’est accepter ce que le tirage du lieu consent à révéler.</p><p>La fouille de base peut proposer un objet configuré par le staff et un gain de Berries. Le résultat ne rejoint pas encore ton sac : il attend une validation.</p></article>
+        <aside class="poster-card"><p class="poster-label">Délai normal</p><strong class="big">6 heures</strong><p>Une seule demande de fouille en attente à la fois.</p></aside>
+      </section>
+      <div class="command"><code>/fouille</code></div>
+      <div class="flow"><div class="flow-step"><strong>Le bot cherche les objets autorisés.</strong> Seules les fiches activées pour la fouille et dotées d’un poids positif participent.</div><div class="flow-step"><strong>Il effectue les tirages.</strong> Un tirage de base, plus les tirages accordés par certains rôles configurés.</div><div class="flow-step"><strong>Il calcule les Berries.</strong> Le gain suit une table séparée.</div><div class="flow-step"><strong>Le staff décide.</strong> Objet et argent ne sont déposés qu’après acceptation.</div></div>
+      <div class="note warning"><p><strong>Poids ≠ pourcentage.</strong> Pour les objets, la valeur de fouille compare un item aux autres items éligibles. Si le catalogue change, la chance réelle de chaque objet change aussi.</p></div>
+
+      <section class="section" id="gains" aria-labelledby="gains-titre">
+        <div class="section-heading"><span class="section-index">Table monétaire</span><h2 id="gains-titre">Ce que les poches du monde peuvent rendre</h2><p>Ici, les poids totalisent 50 : les chances réelles peuvent donc être indiquées.</p></div>
+        <div class="table-wrap"><table><thead><tr><th>Gain</th><th>Poids</th><th>Chance</th><th>Lecture RP possible</th></tr></thead><tbody>
+          <tr><td>0 Berry</td><td>20</td><td>40 %</td><td>De la rouille, des traces… rien de monnayable.</td></tr>
+          <tr><td>5 000 Berries</td><td>15</td><td>30 %</td><td>Quelques billets, une petite bourse oubliée.</td></tr>
+          <tr><td>25 000 Berries</td><td>10</td><td>20 %</td><td>Une cache sérieuse ou une cargaison revendable.</td></tr>
+          <tr><td>50 000 Berries</td><td>4</td><td>8 %</td><td>Le reste d’un butin bien dissimulé.</td></tr>
+          <tr><td>100 000 Berries</td><td>1</td><td>2 %</td><td>La trouvaille que l’on raconte longtemps au port.</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="section" id="bonus" aria-labelledby="bonus-titre">
+        <div class="section-heading"><span class="section-index">Explorateur aguerri</span><h2 id="bonus-titre">La fouille quotidienne supplémentaire</h2><p>La récompense du niveau 20 accorde une utilisation bonus par jour. Elle sert lorsqu’une fouille normale est encore sous son délai de six heures.</p></div>
+        <div class="technical-card"><h3>Comment elle fonctionne</h3><ul><li>Elle se recharge quotidiennement.</li><li>Elle n’annule pas le délai normal : elle permet une exception.</li><li>Une fois consommée, il faut attendre sa prochaine recharge quotidienne ou la fin du cooldown classique.</li></ul></div>
+      </section>
+
+      <section class="section" id="archeologie" aria-labelledby="archeologie-titre">
+        <div class="section-heading"><span class="section-index">Fouille spécialisée</span><h2 id="archeologie-titre">L’archéologie : lire avant de prendre</h2><p>Cette commande exige le rôle d’Archéologue, une place libre dans l’inventaire et aucune autre demande archéologique en attente. Son délai est également de six heures.</p></div>
+        <div class="command"><code>/fouille-archéologique</code></div>
+        <div class="table-wrap"><table><thead><tr><th>Découverte</th><th>Chance</th><th>Idée de mise en scène</th></tr></thead><tbody>
+          <tr><td>[🏺] - Tesson de Céramique Ancienne</td><td>30 %</td><td>Un motif à dater, une culture à reconnaître.</td></tr>
+          <tr><td>[🪙] Pièce d’Or Ancienne</td><td>22 %</td><td>Un règne oublié frappé dans le métal.</td></tr>
+          <tr><td>[🦴] Fossile Marin</td><td>15 %</td><td>Le témoin minéral d’une mer disparue.</td></tr>
+          <tr><td>[🧰] Petit Trésor [10.000 Berry]</td><td>12 %</td><td>Un coffret ancien dont la valeur est inscrite dans le nom.</td></tr>
+          <tr><td>[🗺️] Carte Au Trésor</td><td>10 %</td><td>Le commencement d’une piste plutôt qu’une récompense finale.</td></tr>
+          <tr><td>[💎] - Bijou Royal Ancien</td><td>6 %</td><td>Un objet précieux portant des armoiries.</td></tr>
+          <tr><td>[🗿] - Relique Oubliée</td><td>4 %</td><td>Une pièce rare qui demande contexte et expertise.</td></tr>
+          <tr><td>[⬛] - Fragment de Poneglyphe</td><td>1 %</td><td>Une découverte exceptionnelle à encadrer avec le staff.</td></tr>
+        </tbody></table></div>
+        <div class="note warning"><p><strong>Le Petit Trésor est actuellement un objet.</strong> Malgré la mention « 10.000 Berry » dans son nom, le bot ne verse pas automatiquement 10 000 Berries au portefeuille lors de sa découverte.</p></div>
+        <div class="note"><p>Si l’une de ces fiches n’existe pas encore, le bot la crée comme objet Divers, non fouillable dans la fouille de base et non achetable, puis attend la validation avant de l’ajouter.</p></div>
+      </section>
+
+      <section class="section" id="attente" aria-labelledby="attente-titre">
+        <div class="section-heading"><span class="section-index">Après le tirage</span><h2 id="attente-titre">Une découverte n’est pas encore dans le sac</h2></div>
+        <div class="split"><article class="technical-card"><h3>Acceptée</h3><p>Le bot ajoute les Berries et/ou l’objet une seule fois. S’il manque une place d’inventaire au moment de l’acceptation, la demande reste en attente afin d’être traitée plus tard.</p></article><article class="technical-card"><h3>Refusée ou expirée</h3><p>Un refus clôt le gain sans rembourser automatiquement le délai. Après 24 heures, les boutons expirent mais le staff peut recréer le panneau depuis la gestion des récompenses.</p></article></div>
+      </section>
+
+      <a class="next-chapter" href="peche.html"><span><small>Chapitre suivant</small><strong>Prendre la mer pour pêcher</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>La fouille récompense l’exploration.</strong> Donne toujours une place RP à la trouvaille.</p><p><a href="validation.html">Comprendre les récompenses en attente</a></p></div></footer>
+</div></body></html>

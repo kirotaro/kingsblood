@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Berries, boutique, inventaire, achats et gestion des objets sur One Piece : Kings Blood.">
+  <title>Économie — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre VIII · Les cales</p><h1>Tout butin finit par poser la même question : où le ranger ?</h1><p class="hero-lead">Le portefeuille conserve les Berries ; l’inventaire conserve les objets. La boutique relie les deux, tandis que certaines récompenses attendent encore l’accord du staff.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#consulter">Consulter</a></li><li><a href="#boutique">Boutique</a></li><li><a href="#acheter">Acheter</a></li><li><a href="#inventaire">Inventaire</a></li><li><a href="#gagner">Gagner</a></li></ul>
+
+      <section class="lead-grid" id="consulter" aria-labelledby="consulter-titre">
+        <article class="story-card"><p class="eyebrow">Au comptoir</p><h2 id="consulter-titre">Une bourse, deux registres</h2><p>Le marchand pesa la pièce entre deux doigts, puis observa le sac du voyageur. « L’argent ouvre la caisse, mais c’est la place dans tes cales qui décide si tu repars avec la marchandise. »</p><p>Avant un achat ou un craft, consulte les deux : ton solde et ton inventaire. Ces commandes peuvent également afficher un autre joueur lorsqu’un membre est indiqué.</p></article>
+        <aside class="poster-card"><p class="poster-label">Capacité maximale</p><strong class="big">200 unités</strong><p>La limite compte les quantités totales, pas seulement les noms d’objets différents.</p></aside>
+      </section>
+      <div class="command"><code>/balance</code></div><div class="command"><code>/inventaire</code></div>
+
+      <section class="section" id="boutique" aria-labelledby="boutique-titre">
+        <div class="section-heading"><span class="section-index">Catalogue</span><h2 id="boutique-titre">Explorer la boutique par catégorie</h2><p>La boutique affiche les fiches créées par le staff : nom, description, prix et disponibilité.</p></div>
+        <div class="command"><code>/shop categorie:Armes</code></div>
+        <ul class="tag-list"><li>Armes</li><li>Vivres</li><li>Navigations</li><li>Utilitaire</li><li>Outils</li><li>Ressources</li><li>Soins</li><li>Divers</li></ul>
+        <div class="note"><p>Certains objets sont créés automatiquement comme supports de système — objets de départ, poissons ou vestiges. Ils peuvent apparaître avec un prix <strong>Infini</strong> : c’est une fiche de référence, pas une offre achetable.</p></div>
+      </section>
+
+      <section class="section" id="acheter" aria-labelledby="acheter-titre">
+        <div class="section-heading"><span class="section-index">Transaction immédiate</span><h2 id="acheter-titre">Acheter un objet</h2></div>
+        <div class="command"><code>/shop-buy item:Nom exact quantite:1</code></div>
+        <div class="flow"><div class="flow-step"><strong>Choisis une fiche achetable.</strong> Le prix doit être fini et valide.</div><div class="flow-step"><strong>Le portefeuille est contrôlé.</strong> Il doit couvrir prix × quantité.</div><div class="flow-step"><strong>La capacité est contrôlée.</strong> Les unités achetées doivent tenir dans l’inventaire.</div><div class="flow-step"><strong>L’échange est appliqué.</strong> Les Berries sont retirées et les objets ajoutés immédiatement.</div></div>
+        <div class="note success"><p>L’achat ne passe pas par validation staff. Si un contrôle échoue, le bot n’effectue pas la transaction partiellement.</p></div>
+      </section>
+
+      <section class="section" id="inventaire" aria-labelledby="inventaire-titre">
+        <div class="section-heading"><span class="section-index">Faire de la place</span><h2 id="inventaire-titre">Jeter volontairement</h2><p>La commande retire définitivement une quantité de ton propre inventaire. Utilise un nombre précis ou <code class="inline">all</code>.</p></div>
+        <div class="command"><code>/item-trash item:Nom exact nombre:1</code></div><div class="command"><code>/item-trash item:Nom exact nombre:all</code></div>
+        <div class="note warning"><p>Jeter est immédiat et n’offre aucune contrepartie. Vérifie le nom, la quantité et l’utilité future de l’objet, notamment s’il sert à <code class="inline">/work</code> ou à une recette.</p></div>
+        <div class="split"><article class="technical-card"><h3>Pas de revente générale</h3><p>Le bot ne propose pas de commande pour vendre n’importe quel objet ou poisson. Seuls les résultats de recettes configurées sont vendables via <code class="inline">/sell-craft</code>.</p></article><article class="technical-card"><h3>Objets et prérequis</h3><p>Une canne est nécessaire à la pêche ; des ingrédients au craft ; l’objet principal configuré au travail. Consulte les chapitres concernés avant de nettoyer ton sac.</p></article></div>
+      </section>
+
+      <section class="section" id="gagner" aria-labelledby="gagner-titre">
+        <div class="section-heading"><span class="section-index">Sources de richesse</span><h2 id="gagner-titre">D’où viennent les Berries ?</h2></div>
+        <div class="card-grid three"><article class="stat-card"><h3>Fouilles</h3><p>0 à 100 000 Berries selon la table, après validation staff.</p></article><article class="stat-card"><h3>Niveau 10</h3><p>10 000 Berries automatiques lors de la première obtention du palier.</p></article><article class="stat-card"><h3>Vente de craft</h3><p>Gain immédiat calculé à partir des ingrédients et de la rareté.</p></article></div>
+        <div class="note"><p>D’autres distributions peuvent venir d’événements ou d’actions staff. Elles ne changent pas la règle centrale : le portefeuille et l’inventaire sont enregistrés ensemble dans l’économie du bot.</p></div>
+      </section>
+
+      <a class="next-chapter" href="reputation.html"><span><small>Chapitre suivant</small><strong>Faire naître une réputation</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>Avant toute commande d’objet :</strong> vérifie le nom, le solde et les places libres.</p><p><a href="artisanat.html">Voir la vente des crafts</a></p></div></footer>
+</div></body></html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Métiers, compétences et progression professionnelle sur One Piece : Kings Blood.">
+  <title>Métiers — Le Grand Guide | Kings Blood</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23071d2b' stroke='%23d5a437' stroke-width='4'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f2d78a'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23a62924'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+</head>
+<body><a class="skip-link" href="#contenu">Aller au contenu</a><div class="site-shell">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Accueil du Grand Guide"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand-copy"><strong>One Piece : Kings Blood</strong><small>Le Grand Guide</small></span></a><span class="desktop-tag">Guide RP &amp; règles du bot</span><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir la navigation">☰</button></div></header>
+  <div class="layout"><nav class="site-nav" id="navigation" data-site-nav aria-label="Navigation principale"></nav><main class="page" id="contenu">
+    <section class="hero chapter"><div class="hero-content"><p class="eyebrow">Chapitre VI · Le savoir-faire</p><h1>Un équipage survit grâce aux mains que l’on ne chante pas.</h1><p class="hero-lead">Soigner, cuisiner, construire, naviguer ou chercher : le métier est détecté par ton rôle Discord et progresse par une boucle d’artisanat, de travail et de validation.</p></div></section>
+    <div class="paper-zone"><div class="content">
+      <ul class="mini-toc"><li><a href="#role">Le rôle métier</a></li><li><a href="#liste">Métiers</a></li><li><a href="#progresser">Progresser</a></li><li><a href="#competences">Compétences</a></li><li><a href="#paliers">Paliers</a></li></ul>
+
+      <section class="lead-grid" id="role" aria-labelledby="role-titre">
+        <article class="story-card"><p class="eyebrow">Après la bataille</p><h2 id="role-titre">La victoire qui se prépare dans l’ombre</h2><p>Lorsque le vacarme cessa, le médecin recousit les plaies, le charpentier sauva le mât et le navigateur trouva un courant que personne n’avait vu. Aucun d’eux n’avait porté le dernier coup. Tous avaient rendu le prochain voyage possible.</p><p>Dans le bot, ton métier vient de ton <strong>rôle Discord</strong>. La fiche associe ce rôle à une progression de 0 à 200 XP et à des compétences attribuées par le staff.</p></article>
+        <aside class="poster-card"><p class="poster-label">Maîtrise maximale</p><strong class="big">200 XP</strong><p>Consulte ton métier, sa progression et tes compétences depuis une seule commande.</p></aside>
+      </section>
+      <div class="command"><code>/métier</code></div>
+      <div class="command"><code>/métier user:@Membre</code></div>
+
+      <section class="section" id="liste" aria-labelledby="liste-titre">
+        <div class="section-heading"><span class="section-index">Fonctions d’équipage</span><h2 id="liste-titre">Les métiers reconnus</h2><p>Le bot cherche les rôles correspondants sur ton profil Discord.</p></div>
+        <div class="card-grid three">
+          <article class="stat-card"><h3>🩺 Médecin</h3><p>Diagnostic, soins et gestion des blessés en scène.</p></article>
+          <article class="stat-card"><h3>🍲 Cuisinier</h3><p>Rations, préparation et vie quotidienne de l’équipage.</p></article>
+          <article class="stat-card"><h3>🪚 Charpentier</h3><p>Réparation, structure et maintien du navire.</p></article>
+          <article class="stat-card"><h3>⚒️ Forgeron / Menuisier</h3><p>Fabrication et travail spécialisé des matériaux.</p></article>
+          <article class="stat-card"><h3>🏺 Archéologue</h3><p>Vestiges, interprétation et fouille archéologique.</p></article>
+          <article class="stat-card"><h3>⚗️ Scientifique / Chimiste</h3><p>Expérimentation et productions techniques encadrées.</p></article>
+          <article class="stat-card"><h3>🎵 Musicien</h3><p>Performance, moral et créations musicales.</p></article>
+          <article class="stat-card"><h3>🧭 Navigateur / Timonier</h3><p>Route, manœuvre et lecture des conditions marines.</p></article>
+        </div>
+        <div class="note"><p>Le rôle donne accès au système ; il ne remplace pas une interprétation cohérente. Les résultats extraordinaires ou les créations majeures restent soumis aux règles de scène et au staff.</p></div>
+      </section>
+
+      <section class="section" id="progresser" aria-labelledby="progresser-titre">
+        <div class="section-heading"><span class="section-index">Boucle de progression</span><h2 id="progresser-titre">Comment augmenter son métier</h2><p><code class="inline">/work</code> ne fonctionne pas seul : il faut d’abord fabriquer et obtenir l’objet de travail principal configuré pour ton métier.</p></div>
+        <div class="flow"><div class="flow-step"><strong>Consulte les recettes.</strong> Utilise <code class="inline">/craft-list</code> pour voir ce que ton rôle et ton niveau permettent.</div><div class="flow-step"><strong>Fabrique avec <code class="inline">/craft</code>.</strong> Les ingrédients sont consommés et l’objet crafté est ajouté immédiatement.</div><div class="flow-step"><strong>Obtiens l’objet principal de travail.</strong> Chaque unité fabriquée a actuellement 15 % de chance de proposer cet objet bonus ; ce bonus passe par validation staff.</div><div class="flow-step"><strong>Lance <code class="inline">/work</code>.</strong> Tu dois posséder l’objet principal dans ton inventaire.</div><div class="flow-step"><strong>Attends l’accord.</strong> À l’acceptation, le bot consomme 1 objet principal et ajoute <strong>+1 XP métier</strong>.</div></div>
+        <div class="command"><code>/craft-list</code></div><div class="command"><code>/craft item:Nom de la recette nombre:1</code></div><div class="command"><code>/work</code></div>
+        <div class="split"><article class="technical-card"><h3>Ce qui bloque</h3><ul><li>Aucun rôle métier reconnu.</li><li>Objet principal absent de l’inventaire.</li><li>Une demande de travail déjà en attente.</li><li>Métier arrivé à 200 XP.</li></ul></article><article class="technical-card"><h3>Ce qui est consommé</h3><p>L’objet principal n’est retiré qu’au moment où le staff accepte la récompense. S’il a disparu avant l’acceptation, la demande reste en attente jusqu’à résolution.</p></article></div>
+      </section>
+
+      <section class="section" id="competences" aria-labelledby="competences-titre">
+        <div class="section-heading"><span class="section-index">Savoir spécialisé</span><h2 id="competences-titre">Les compétences de métier</h2><p>La fiche <code class="inline">/métier</code> affiche les compétences attachées à ton personnage. Leur catalogue et leur attribution sont gérés par le staff.</p></div>
+        <div class="note warning"><p>Une compétence est une autorisation ou un repère RP défini par le serveur. Son nom seul ne crée pas un effet automatique supplémentaire dans le bot : lis sa description et respecte le cadre donné.</p></div>
+      </section>
+
+      <section class="section" id="paliers" aria-labelledby="paliers-titre">
+        <div class="section-heading"><span class="section-index">Qualité des ouvrages</span><h2 id="paliers-titre">L’XP ouvre les raretés de craft</h2><p>Plus ton métier progresse, plus les recettes de qualité élevée deviennent accessibles.</p></div>
+        <div class="table-wrap"><table><thead><tr><th>XP minimum</th><th>Rareté accessible</th><th>XP minimum</th><th>Rareté accessible</th></tr></thead><tbody>
+          <tr><td>0</td><td>Mauvaise Qualité</td><td>100</td><td>Super Rare</td></tr>
+          <tr><td>20</td><td>Commun</td><td>120</td><td>Épique</td></tr>
+          <tr><td>40</td><td>Peu Commun</td><td>140</td><td>Légendaire</td></tr>
+          <tr><td>60</td><td>Rare</td><td>160</td><td>Mythique</td></tr>
+          <tr><td>80</td><td>Très Rare</td><td>180</td><td>Secret</td></tr>
+        </tbody></table></div>
+        <div class="note success"><p>Le palier autorise une recette ; il ne fournit ni ses ingrédients, ni une place d’inventaire. Consulte toujours la recette avant de lancer la fabrication.</p></div>
+      </section>
+
+      <a class="next-chapter" href="artisanat.html"><span><small>Chapitre suivant</small><strong>Fabriquer, travailler et vendre</strong></span><span aria-hidden="true">→</span></a>
+    </div></div>
+  </main></div>
+  <footer class="page-footer"><div class="footer-inner"><p><strong>Le métier progresse par la pratique.</strong> Craft → objet de travail → demande → validation → +1 XP.</p><p><a href="artisanat.html">Ouvrir le guide de l’artisanat</a></p></div></footer>
+</div></body></html>
